@@ -1,0 +1,169 @@
+<!-- SEARCH NAVBAR -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-custom">
+    <a class="navbar-brand ml-3" id="navLogo" href="/">GarageFind
+        <span class="tradeMark">TM</span>
+    </a>
+    <div class="container mx-auto">
+        <div class="input-group" id="navSearchBar">
+            <input type="text" class="form-control" id="srchtxt" placeholder="City/ State/ Zip-Code">
+            <div class="input-group-append">
+                <button class="btn btn-outline-light pl-5 pr-5" id="searchBtn" type="button">FIND</button>
+            </div>
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end mr-3" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/find/MN/Minneapolis">Find
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item pr-1 pl-4">
+                <a class="nav-link" href="/sell">Sell</a>
+            </li>
+            <li class="nav-item pr-1 pl-4">
+                <a class="nav-link" href="/mylistings">My listings</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- SELL INFO JUMBO -->
+<div class="jumbotron jumbotron-fluid" id="sellInfoJumbo">
+    <div class="container">
+
+        <div class="row m-0 p-0">
+
+            <div class="col-md-4 m-0 px-3">
+                <div class="card text-center bg-transparent border-0 infoCards">
+                    <div class="card-block">
+                        <img class="card-img-top pb-5 infoImg" src="/img/calendar.png" alt="Search">
+                        <h3 class="card-title text-center infoCardTitle">Determine Your Sale</h3>
+                        <p class="card-text text-center">Determine the items to be sold, then the time and date of your sale.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 m-0 px-3">
+                <div class="card text-center bg-transparent border-0 infoCards">
+                    <div class="card-block">
+                        <img class="card-img-top pb-5 infoImg" src="/img/form.png" alt="Find">
+                        <h3 class="card-title text-center infoCardTitle">Fill & Submit Form</h3>
+                        <p class="card-text text-center">Fill out the information on GarageFind, then submit. The info provided will go through an extensive
+                            database that will match buyers with your listing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 m-0 px-3">
+                <div class="card text-center bg-transparent border-0 infoCards">
+                    <div class="card-block">
+                        <img class="card-img-top pb-5 infoImg" src="/img/people.png" alt="Go">
+                        <h3 class="card-title text-center infoCardTitle">Watch Buyers Flock</h3>
+                        <p class="card-text text-center">Approximately 24 hours after you submit your listing, it will go live. Then, watch as buyers flock
+                            to your event and increase your sales.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- SELL CONTENT - SELLER LISTING -->
+<div class="row m-0 p-0">
+
+    <div class="col-md-12 text-center mt-5 mb-3">
+        <p class="h4">
+            <img src="/img/glyphicons-66-tag.png">
+            <span class="city">LIST YOUR SALE</span>
+        </p>
+    </div>
+
+    <div class="col-md-6 offset-3 mb-3 mt-3 text-center">
+
+        <!-- Form -->
+        <form class="create-form" sale_event_id="{{sale.id}}">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Bob Baker" value="Mark Chaffin">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Address</label>
+                <input type="address" class="form-control" id="address" placeholder="12345 Cherry Lane" value="{{sale.address}}">
+            </div>
+
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">City</label>
+                        <input type="City" class="form-control" id="city" placeholder="Minneapolis" value="{{sale.city}}">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">State</label>
+                        <input type="text" class="form-control" id="state" value="{{sale.state}}">
+                            {{!-- <option>MN</option>
+                            <option>WI</option>
+                            <option>IA</option>
+                            <option>IL</option>
+                            <option>MI</option> --}}
+                        </input>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Zip Code</label>
+                        <input type="Zip Code" class="form-control" id="zipcode" placeholder="12345" value="{{sale.zip}}">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="date">Date of Sale</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-lg fa-calendar">
+                                </i>
+                            </div>
+                            <input type="text" class="form-control ml-1" id="date" placeholder="MM/DD/YYYY" value="{{sale.fmtdate}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Start Time</label>
+                        <input type="Zip Code" class="form-control" id="start-time" placeholder="08:00" value="{{sale.fmtsttime}}">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">End Time</label>
+                        <input type="Zip Code" class="form-control" id="end-time" placeholder="16:00" value="{{sale.fmtendtime}}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comments For Buyers</label>
+                <textarea class="form-control" id="comments" rows="3">{{sale.comments}}</textarea>
+            </div>
+            <br>
+            <div class="input-group-append justify-content-center">
+                <a class="btn btn-primary border-0 px-4" id="sellerBtn">NEXT : Select Catagories</a>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<script src="/js/editlisting.js"></script>
+<script src="/js/autofill.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>

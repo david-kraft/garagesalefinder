@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GarageFind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{!-- BOOTSTRAP CSS CDN --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    {{!-- INTERNAL CSS --}}
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    {{!-- BOOTSTRAP JS CDN --}}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    {{!-- GOOGLE FONTS --}}
+    <link href="https://fonts.googleapis.com/css?family=Muli|Caveat|Permanent+Marker" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAhNxc8BbsIMC5tFTNUSADF8vhSiNxXmA&libraries=places"></script>
+    
+    {{!-- DateTimePicker --}}
+    {{!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css"
+    /> --}}
+
+</head>
+
+<body>
+
+    {{{body}}}
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="row m-0 p-0 text-center">
+
+            <div class="col-md-6 text-left">
+                <p>
+                    <span id="footerBrand">GarageFind</span>&nbsp;TM
+                    <br>555 Minnesota Blvd
+                    <br>Minneapolis, MN 55411
+                    <br>555-555-5555
+                    <br>info@GarageFind.com
+                    <br>
+                </p>
+            </div>
+
+            <div class="col-md-6 text-right">
+                <p>GarageFind(TM) is founded by UMN Coding Bootcamp students.
+                    <br> ©2018 All Rights Reserved.
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <a href="http://www.facebook.com">
+                                <img id="fbIcon" src="/img/fb.png">
+                            </a>
+                            <a href="href=" http://www.instagram.com "">
+                                <img id="igIcon" src="/img/insta.png">
+                            </a>
+                        </div>
+                    </div>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <div class="modal fade" id="eModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eModalLongTitle">
+                        <b>Alert!</b>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="eModalBody">
+                    Default Message!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/googlesearch.js"></script>
+</body>
+
+</html>

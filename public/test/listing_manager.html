@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GarageFind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BOOTSTRAP CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <!-- INTERNAL CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- BOOTSTRAP JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Muli|Caveat|Permanent+Marker" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- SEARCH NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-custom">
+        <a class="navbar-brand ml-3" id="navLogo" href="index1.html">GarageFind
+            <span class="tradeMark">TM</span>
+        </a>
+        <div class="container mx-auto">
+            <div class="input-group" id="navSearchBar">
+                <input type="text" class="form-control" placeholder="City / Zip-Code">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light pl-5 pr-5" id="searchBtn" type="button">FIND</button>
+                </div>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mr-3" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="find.html">Find
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item pr-1 pl-4">
+                    <a class="nav-link" href="sell.html">Sell</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MANAGER IMG JUMBO -->
+    <div class="jumbotron jumbotron-fluid" id="managerImgJumbo">
+    </div>
+
+    <!-- MANAGER CONTENT -->
+    <div class="row m-0 p-0">
+
+        <div class="col-md-12 text-center mt-5 mb-3">
+            <p class="h4">
+                <img src="img/glyphicons-66-tag.png">
+                <span class="city">LISTING MANAGER</span>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Seller username - Displayed at top -->
+    <div class="row m-0 p-0">
+        <div class="col-md-12 text-center mt-3 mb-3">
+            <h5 id="managerUser">John Wayne</h5>
+        </div>
+    </div>
+
+    <!-- Seller Listings -->
+    <div class="container">
+
+        <!-- Listing #1 -->
+        <div class="row">
+            <div class="col-md-12 m-0 p-0">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <p id="managerAddress">
+                                    1234 Address Lane
+                                </p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p id="managerDate">
+                                    07/28/18 - 07/30/18
+                                </p>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <a href="sell.html" class="btn btn-primary border-0 px-5 managerEditBtn">Edit</a>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <a href="..." class="btn btn-primary border-0 px-5 managerEditBtn">X</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Listing #2 -->
+        <div class="row">
+            <div class="col-md-12 m-0 p-0">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <p id="managerAddress">
+                                    1234 Address Lane
+                                </p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p id="managerDate">
+                                    07/28/18 - 07/30/18
+                                </p>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <a href="sell.html" class="btn btn-primary border-0 px-5 managerEditBtn">Edit</a>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <a href="..." class="btn btn-primary border-0 px-5 managerEditBtn">X</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Listing #3 -->
+        <div class="row">
+            <div class="col-md-12 m-0 p-0">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <p id="managerAddress">
+                                    1234 Address Lane
+                                </p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p id="managerDate">
+                                    07/28/18 - 07/30/18
+                                </p>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <a href="sell.html" class="btn btn-primary border-0 px-5 managerEditBtn">Edit</a>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <a href="..." class="btn btn-primary border-0 px-5 managerEditBtn">X</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="row m-0 p-0 text-center">
+
+            <div class="col-md-6 text-left">
+                <p>
+                    <span id="footerBrand">GarageFind</span>&nbsp;TM
+                    <br>555 Minnesota Blvd
+                    <br>Minneapolis, MN 55411
+                    <br>555-555-5555
+                    <br>info@GarageFind.com
+                    <br>
+                </p>
+            </div>
+
+            <div class="col-md-6 text-right">
+                <p>GarageFind(TM) is founded by UMN Coding Bootcamp students.
+                    <br> ©2018 All Rights Reserved.
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <a href="http://www.facebook.com">
+                                <img id="fbIcon" src="img/fb.png">
+                            </a>
+                            <a href="href=" http://www.instagram.com "">
+                                <img id="igIcon" src="img/insta.png">
+                            </a>
+                        </div>
+                    </div>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/sell.js"></script>
+</body>
+
+</html>

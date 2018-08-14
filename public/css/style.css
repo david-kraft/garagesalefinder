@@ -1,0 +1,313 @@
+body {
+    background: #EFEBE6;
+    color: black;
+    font-family: "Muli", sans-serif;
+}
+
+footer {
+    background: #F3A712;
+    color: white;
+    font-size: 10px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+a:hover {
+    color: #F3A712 !important;
+}
+
+hr {
+    width: 60%;
+}
+
+/*** INDEX PAGE ***/
+
+/* MAIN JUMBO */
+#navLogo {
+    font-size: 24px;
+    font-family: "Permanent Marker", cursive;
+    color: white;
+}
+
+#navLogo:hover {
+    color: #F3A712 !important;
+}
+
+.tradeMark {
+    font-size: 8px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+    color: black !important;
+}
+
+.navbar-toggler {
+    border-color: white !important;
+}
+  
+.navbar-toggler-icon {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+
+.nav-link {
+    font-family: "Caveat", cursive;
+    font-weight: bold !important;
+    color: white !important;
+    font-size: 150%;
+}
+
+.mainJumbo {
+    background: url("../img/index.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    margin-top: -68px;
+}
+
+#mainJumboContainer {
+    margin-top: 130px;
+}
+
+#mainJumboLogo {
+    font-family: "Permanent Marker", cursive;
+    color: #DB2B39;
+    text-shadow: 50px 50px 100px silver;
+}
+
+#tradeMark2 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.mainJumboLeadHighlight {
+    color: white;
+    background: black;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    &:before {
+      content: "\A";
+      white-space: pre;
+    }
+}
+
+#searchBtn {
+    background: #DB2B39;
+    font-weight: bold;
+}
+
+#searchBtn:hover {
+    background: #F3A712;
+    color: white;
+}
+
+/* INFO JUMBO */
+.infoJumbo {
+    background: #F3A712;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: -32px;
+}
+
+.infoCards {
+    color: white;
+}
+
+.infoImg {
+    width: 150px;
+}
+
+.infoCardTitle {
+    font-weight: bold;
+}
+
+/* INDEX CONTENT */
+
+.indListingBtn {
+    background: #DB2B39 !important;
+}
+
+.indListingBtn:hover {
+    background: #F3A712 !important;
+    color: white !important;
+}
+
+.contentCity {
+    color: #F3A712;
+    font-weight: boldest;
+    font-size: 24px;
+    letter-spacing: -2px;
+}
+
+.customCardImg {
+}
+
+.customCard {
+    height: 500px;
+}
+
+#fbIcon {
+    width: 28px !important;
+}
+
+#igIcon {
+    width: 40px !important;
+    padding-left: 10px !important;
+}
+
+/* FOOTER */
+
+#footerBrand {
+    font-weight: bold;
+    font-size:16px;
+}
+
+
+/*** FIND, SELL, LISTING PAGE ***/
+.bg-custom {
+    background: #DB2B39;
+}
+
+#navSearchBar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60%;
+    float: none;
+    text-align: center;
+}
+
+
+/*** FIND PAGE ***/
+
+#findMap {
+    width: 100%;
+}
+
+
+/*** SELL PAGE ***/
+
+/*
+#sellImgJumbo {
+    background: url("../img/sell.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 475px;
+}
+*/
+
+#sellInfoJumbo {
+    background: #29335C !important;
+    margin-top: -32px;
+}
+
+#sellerBtn {
+    background: #DB2B39 !important;
+    font-weight: bold !important;
+}
+
+#sellerBtn:hover {
+    background: #F3A712 !important;
+    color: white !important;
+}
+
+/*** SELL P2 ***/
+
+.sellCategories {
+}
+
+.sellQuantity {
+    font-size: 14px;
+}
+
+.custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #F3A712 !important;
+    cursor: pointer;
+}
+
+#termsAndAgreements {
+    font-style: italic;
+}
+
+/*** LISTING PAGE ***/
+
+#listingImgJumbo {
+    background: url("../img/listing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 475px;
+}
+
+#listingAddress {
+    color: #F3A712;
+}
+
+#listingHouseImg {
+    width: 100%;
+}
+
+#listingMapImg {
+    width: 100%;
+}
+
+#listingManageRow {
+    background: white;
+}
+
+.listingManageBtn {
+    background: #DB2B39 !important;
+}
+
+.listingManageBtn:hover {
+    background: #F3A712 !important;
+    color: white !important;
+}
+
+.listingCol {
+    background: white !important;
+}
+
+.listingInfo {
+    color: #F3A712 !important;
+}
+
+.listingInfoContent {
+    
+}
+
+/*** LISTING-MANAGER PAGE ***/
+
+#managerImgJumbo {
+    background: url("../img/manager.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 475px;
+}
+
+#managerUser{}
+#managerAddress{}
+#managerDate{}
+
+.managerEditBtn {
+    background: #DB2B39 !important;
+}
+
+.managerEditBtn:hover {
+    background: #F3A712 !important;
+    color: white !important;
+}
+
+
+
+
